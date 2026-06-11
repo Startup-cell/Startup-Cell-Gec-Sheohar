@@ -1,5 +1,5 @@
 import "./Hero.css";
-import collegeLogo from "../../assets/images/hero.png";
+import collegeLogo from "../../assets/images/Hero.png";
 
 function Hero() {
   return (

@@ -1,0 +1,171 @@
+.contact-section{
+  padding:50px 8%;
+  background:#f8fafc;
+}
+
+.contact-container{
+  max-width:950px;
+  margin:auto;
+
+  background:white;
+
+  border-radius:24px;
+
+  padding:32px;
+
+  border:1px solid rgba(37,99,235,.08);
+
+  box-shadow:
+    0 10px 30px rgba(15,23,42,.06);
+}
+
+.contact-header{
+  text-align:center;
+  margin-bottom:25px;
+}
+
+.contact-tag{
+  color:#2563eb;
+
+  font-size:.75rem;
+  font-weight:700;
+
+  letter-spacing:4px;
+}
+
+.contact-header h2{
+  margin-top:8px;
+
+  font-size:2rem;
+  font-weight:800;
+
+  color:#0f172a;
+}
+
+.contact-header p{
+  margin-top:8px;
+
+  color:#64748b;
+
+  max-width:550px;
+
+  margin-inline:auto;
+
+  line-height:1.6;
+
+  font-size:.95rem;
+}
+
+.form-grid{
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:14px 18px;
+}
+
+.input-group{
+  display:flex;
+  flex-direction:column;
+}
+
+.input-group label{
+  margin-bottom:6px;
+
+  font-size:.9rem;
+  font-weight:600;
+
+  color:#0f172a;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+  padding:12px 14px;
+
+  border:1px solid #dbe3f0;
+
+  border-radius:12px;
+
+  background:#f8fafc;
+
+  font-size:.95rem;
+
+  outline:none;
+
+  transition:.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus{
+  border-color:#2563eb;
+
+  background:white;
+
+  box-shadow:
+    0 0 0 3px rgba(37,99,235,.08);
+}
+
+.full-width{
+  margin-top:14px;
+}
+
+.input-group textarea{
+  resize:none;
+  min-height:90px;
+}
+
+.contact-btn{
+  margin-top:18px;
+
+  width:100%;
+
+  padding:14px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2563eb,
+    #4f46e5
+  );
+
+  color:white;
+
+  font-size:.95rem;
+  font-weight:700;
+
+  cursor:pointer;
+
+  transition:.3s;
+}
+
+.contact-btn:hover{
+  transform:translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(37,99,235,.25);
+}
+
+@media(max-width:768px){
+
+  .contact-section{
+    padding:40px 5%;
+  }
+
+  .contact-container{
+    padding:22px;
+  }
+
+  .contact-header h2{
+    font-size:1.8rem;
+  }
+
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+}

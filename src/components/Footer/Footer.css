@@ -1,0 +1,306 @@
+.footer{
+  background:
+  linear-gradient(
+    135deg,
+    #020b35 0%,
+    #041552 45%,
+    #0b1f72 100%
+  );
+
+  color:white;
+
+  padding:60px 8% 20px;
+
+  position:relative;
+  overflow:hidden;
+}
+
+.footer::before{
+  content:"";
+
+  position:absolute;
+
+  width:300px;
+  height:300px;
+
+  top:-120px;
+  right:-80px;
+
+  border-radius:50%;
+
+  background:rgba(59,130,246,.08);
+
+  filter:blur(80px);
+}
+
+.footer-grid{
+  display:grid;
+
+  grid-template-columns:1.8fr 1fr 1.2fr;
+
+  gap:35px;
+
+  position:relative;
+  z-index:2;
+}
+
+/* =========================
+   BRAND
+========================= */
+
+.footer h3{
+  font-size:1.7rem;
+  margin-bottom:10px;
+}
+
+.footer p{
+  margin-top:12px;
+
+  color:#dbeafe;
+
+  line-height:1.8;
+
+  max-width:450px;
+
+  font-size:.95rem;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.footer h4{
+  margin-bottom:20px;
+
+  color:#fbbf24;
+
+  font-size:1.1rem;
+}
+
+.footer ul{
+  list-style:none;
+  padding:0;
+}
+
+.footer li{
+  margin-bottom:12px;
+
+  color:#cbd5e1;
+
+  transition:.3s;
+
+  cursor:pointer;
+
+  font-size:.95rem;
+}
+
+.footer li:hover{
+  color:#fbbf24;
+  transform:translateX(4px);
+}
+
+/* =========================
+   SOCIALS
+========================= */
+
+.socials{
+  display:flex;
+  gap:12px;
+  margin-top:25px;
+}
+
+.socials a{
+  width:42px;
+  height:42px;
+
+  border-radius:50%;
+
+  background:rgba(255,255,255,.08);
+
+  backdrop-filter:blur(12px);
+
+  border:1px solid rgba(255,255,255,.1);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  color:white;
+
+  text-decoration:none;
+
+  transition:.35s;
+}
+
+.socials a:hover{
+  transform:translateY(-4px);
+
+  background:#2563eb;
+
+  border-color:#60a5fa;
+
+  box-shadow:
+    0 8px 20px rgba(37,99,235,.35);
+}
+
+/* =========================
+   CONTACT CARDS
+========================= */
+
+.contact-cards{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.contact-card{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+
+  background:rgba(255,255,255,.05);
+
+  border:1px solid rgba(255,255,255,.08);
+
+  border-radius:14px;
+
+  padding:12px 14px;
+
+  transition:.3s;
+}
+
+.contact-card:hover{
+  transform:translateY(-3px);
+
+  border-color:#fbbf24;
+
+  background:rgba(255,255,255,.08);
+}
+
+.contact-card span{
+  font-size:1.2rem;
+}
+
+.contact-card h5{
+  margin-bottom:4px;
+
+  color:#fbbf24;
+
+  font-size:.95rem;
+}
+
+.contact-card p{
+  margin:0;
+
+  color:#dbeafe;
+
+  line-height:1.5;
+
+  font-size:.88rem;
+}
+
+/* =========================
+   FOOTER BOTTOM
+========================= */
+
+.footer-bottom{
+  margin-top:40px;
+  padding-top:22px;
+
+  border-top:1px solid rgba(255,255,255,.08);
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  position:relative;
+  z-index:2;
+
+  color:#94a3b8;
+
+  font-size:.92rem;
+}
+
+.copyright{
+  color:#94a3b8;
+}
+
+.developer-credit{
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  color:#cbd5e1;
+
+  font-weight:500;
+}
+
+.developer-credit strong{
+  color:#fbbf24;
+  font-weight:700;
+
+  transition:.3s;
+}
+
+.developer-credit strong:hover{
+  text-shadow:
+    0 0 15px rgba(251,191,36,.6);
+}
+
+.batch{
+  color:#94a3b8;
+  font-weight:500;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+  .footer-grid{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .footer{
+    text-align:center;
+  }
+
+  .footer p{
+    margin-inline:auto;
+  }
+
+  .socials{
+    justify-content:center;
+  }
+
+  .contact-card{
+    text-align:left;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .footer{
+    padding:50px 6% 20px;
+  }
+
+  .footer h3{
+    font-size:1.4rem;
+  }
+
+  .socials a{
+    width:38px;
+    height:38px;
+  }
+
+  .footer-bottom{
+    flex-direction:column;
+    gap:12px;
+
+    text-align:center;
+  }
+
+}

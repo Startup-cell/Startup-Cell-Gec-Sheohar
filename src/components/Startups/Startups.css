@@ -1,0 +1,44 @@
+.startups{
+  padding:120px 10%;
+  text-align:center;
+}
+
+.startups h2{
+  font-size:2.8rem;
+  margin-top:10px;
+  color:#0f172a;
+}
+
+.startup-grid{
+  margin-top:60px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:25px;
+}
+
+.startup-card{
+  background:white;
+  padding:30px;
+  border-radius:18px;
+  text-align:left;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.startup-card span{
+  display:block;
+  margin:10px 0;
+  color:#2563eb;
+  font-weight:600;
+}
+
+.startup-card p{
+  color:#475569;
+  line-height:1.7;
+}
+
+.startup-card a{
+  display:inline-block;
+  margin-top:20px;
+  text-decoration:none;
+  font-weight:600;
+}

@@ -1,0 +1,55 @@
+.cta-section{
+  padding:100px 10%;
+  background:#f8fafc;
+}
+
+.cta-box{
+  background:linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8
+  );
+
+  border-radius:30px;
+
+  padding:70px 40px;
+
+  text-align:center;
+
+  color:white;
+}
+
+.cta-box h2{
+  font-size:3rem;
+  margin-bottom:20px;
+}
+
+.cta-box p{
+  max-width:700px;
+  margin:auto;
+  line-height:1.8;
+  color:#dbeafe;
+}
+
+.cta-box button{
+  margin-top:35px;
+
+  padding:16px 32px;
+
+  border:none;
+  border-radius:12px;
+
+  background:white;
+  color:#1d4ed8;
+
+  font-weight:700;
+  cursor:pointer;
+}
+
+@media(max-width:768px){
+
+  .cta-box h2{
+    font-size:2rem;
+  }
+
+}

@@ -1,0 +1,254 @@
+.policy-section{
+  padding:120px 10%;
+
+  background:
+  linear-gradient(
+    180deg,
+    #f8fbff 0%,
+    #eef4ff 100%
+  );
+
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+
+.policy-section::before{
+  content:"";
+
+  position:absolute;
+  width:500px;
+  height:500px;
+
+  top:-150px;
+  right:-150px;
+
+  border-radius:50%;
+
+  background:
+  radial-gradient(
+    circle,
+    rgba(37,99,235,.12),
+    transparent 70%
+  );
+
+  pointer-events:none;
+}
+
+.policy-header h2{
+  margin-top:15px;
+  font-size:3rem;
+  font-weight:800;
+  color:#04103d;
+}
+
+.policy-header p{
+  margin-top:20px;
+  color:#64748b;
+  max-width:850px;
+  margin-inline:auto;
+  line-height:1.8;
+  font-size:1.05rem;
+}
+
+/* =========================
+   BENEFITS GRID
+========================= */
+
+.benefits-grid{
+  margin-top:60px;
+
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+  gap:25px;
+}
+
+.benefit-card{
+  background:rgba(255,255,255,0.75);
+
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+
+  border:1px solid rgba(255,255,255,0.8);
+
+  border-radius:24px;
+
+  padding:30px;
+
+  font-weight:600;
+  color:#04103d;
+
+  box-shadow:
+    0 10px 30px rgba(2,6,23,.08);
+
+  transition:all .35s ease;
+}
+
+.benefit-card:hover{
+  transform:translateY(-8px);
+
+  box-shadow:
+    0 20px 40px rgba(37,99,235,.15);
+
+  border-color:
+    rgba(37,99,235,.25);
+}
+
+/* =========================
+   ELIGIBILITY BOX
+========================= */
+
+.eligibility-box{
+  margin-top:60px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #04103d 0%,
+    #0b1f72 100%
+  );
+
+  color:white;
+
+  padding:50px;
+
+  border-radius:28px;
+
+  position:relative;
+  overflow:hidden;
+
+  box-shadow:
+    0 25px 60px rgba(4,16,61,.25);
+
+  text-align:center;
+}
+
+.eligibility-box::before{
+  content:"";
+
+  position:absolute;
+
+  width:350px;
+  height:350px;
+
+  top:-120px;
+  right:-120px;
+
+  border-radius:50%;
+
+  background:
+  radial-gradient(
+    circle,
+    rgba(251,191,36,.25),
+    transparent 70%
+  );
+}
+
+.eligibility-box h3{
+  position:relative;
+  z-index:2;
+
+  font-size:2.2rem;
+  color:#fbbf24;
+
+  margin-bottom:30px;
+}
+
+.eligibility-box ul{
+  position:relative;
+  z-index:2;
+
+  list-style:none;
+  padding:0;
+  margin:0;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:18px;
+}
+
+.eligibility-box li{
+  color:#e2e8f0;
+  font-size:1.1rem;
+  font-weight:500;
+  line-height:1.7;
+
+  text-align:center;
+}
+
+.eligibility-box li::before{
+  content:"✓";
+  color:#fbbf24;
+  font-weight:bold;
+  margin-right:10px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.policy-btn{
+  margin-top:45px;
+
+  padding:16px 34px;
+
+  border:none;
+  border-radius:14px;
+
+  background:#fbbf24;
+  color:#04103d;
+
+  font-weight:700;
+  font-size:1rem;
+
+  cursor:pointer;
+
+  transition:all .3s ease;
+
+  box-shadow:
+    0 10px 25px rgba(251,191,36,.35);
+}
+
+.policy-btn:hover{
+  transform:translateY(-4px);
+
+  box-shadow:
+    0 18px 35px rgba(251,191,36,.45);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+  .policy-section{
+    padding:90px 7%;
+  }
+
+  .policy-header h2{
+    font-size:2.2rem;
+  }
+
+  .eligibility-box{
+    padding:35px 25px;
+  }
+
+  .eligibility-box h3{
+    font-size:1.8rem;
+  }
+
+  .eligibility-box li{
+    font-size:1rem;
+  }
+
+}
+.policy-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  text-decoration:none;
+}

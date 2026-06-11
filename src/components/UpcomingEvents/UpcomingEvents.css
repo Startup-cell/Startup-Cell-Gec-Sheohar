@@ -1,0 +1,44 @@
+.upcoming-events{
+  padding:120px 10%;
+  text-align:center;
+}
+
+.upcoming-events h2{
+  margin-top:15px;
+  font-size:2.8rem;
+  color:#0f172a;
+}
+
+.upcoming-events p{
+  color:#64748b;
+}
+
+.upcoming-grid{
+  margin-top:60px;
+
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+  gap:25px;
+}
+
+.upcoming-card{
+  background:white;
+
+  padding:30px;
+
+  border-radius:18px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+  text-align:left;
+
+  border-top:5px solid #fbbf24;
+}
+
+.upcoming-card span{
+  display:block;
+  margin:15px 0;
+  color:#2563eb;
+  font-weight:600;
+}

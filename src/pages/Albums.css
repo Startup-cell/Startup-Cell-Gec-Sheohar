@@ -1,0 +1,125 @@
+.albums-page{
+  padding:140px 10% 80px;
+  background:
+  linear-gradient(
+    180deg,
+    #f8fafc 0%,
+    #eef4ff 100%
+  );
+  min-height:100vh;
+}
+
+.albums-header{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+.albums-header span{
+  color:#2563eb;
+  font-size:.85rem;
+  font-weight:700;
+  letter-spacing:3px;
+}
+
+.albums-header h1{
+  margin-top:15px;
+  font-size:3rem;
+  color:#0f172a;
+}
+
+.albums-header p{
+  margin-top:15px;
+  color:#64748b;
+  max-width:700px;
+  margin-inline:auto;
+  line-height:1.8;
+}
+
+.albums-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+  gap:35px;
+}
+
+.album-card{
+  background:#ffffff;
+  border-radius:24px;
+  overflow:hidden;
+
+  box-shadow:
+    0 10px 30px rgba(15,23,42,.08);
+
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+.album-card:hover{
+  transform:translateY(-10px);
+
+  box-shadow:
+    0 25px 50px rgba(15,23,42,.15);
+}
+
+/* IMAGE SECTION */
+
+.album-image{
+  background:#ffffff;
+  padding:18px;
+  border-bottom:1px solid #e2e8f0;
+}
+
+.album-image img{
+  width:100%;
+  height:auto;
+  display:block;
+
+  border-radius:18px;
+
+  object-fit:contain;
+
+  transition:transform .4s ease;
+}
+
+.album-card:hover .album-image img{
+  transform:scale(1.03);
+}
+
+/* CONTENT */
+
+.album-content{
+  padding:25px;
+}
+
+.album-content h3{
+  color:#0f172a;
+  font-size:1.15rem;
+  font-weight:700;
+  margin-bottom:12px;
+  line-height:1.4;
+}
+
+.album-content p{
+  color:#64748b;
+  line-height:1.7;
+  font-size:.95rem;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .albums-page{
+    padding:120px 6% 60px;
+  }
+
+  .albums-header h1{
+    font-size:2.2rem;
+  }
+
+  .albums-grid{
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+}

@@ -1,0 +1,161 @@
+.notices-page{
+  padding:140px 10% 80px;
+  background:#f8fafc;
+  min-height:100vh;
+}
+
+.notices-header{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.notices-header span{
+  color:#2563eb;
+  font-weight:700;
+  letter-spacing:3px;
+  font-size:.85rem;
+}
+
+.notices-header h1{
+  margin-top:15px;
+  font-size:3rem;
+  color:#0f172a;
+}
+
+.notices-header p{
+  margin-top:15px;
+  color:#64748b;
+  max-width:700px;
+  margin-inline:auto;
+  line-height:1.8;
+}
+
+.notices-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:25px;
+}
+
+.notice-card{
+  background:white;
+
+  border-radius:24px;
+
+  padding:30px;
+
+  border:1px solid rgba(37,99,235,.08);
+
+  box-shadow:
+    0 10px 30px rgba(15,23,42,.06);
+
+  transition:.35s;
+}
+
+.notice-card:hover{
+  transform:translateY(-8px);
+
+  box-shadow:
+    0 20px 40px rgba(15,23,42,.12);
+}
+
+.notice-date{
+  display:inline-block;
+
+  padding:8px 14px;
+
+  background:#eff6ff;
+
+  color:#2563eb;
+
+  border-radius:20px;
+
+  font-size:.85rem;
+
+  font-weight:600;
+}
+
+.notice-card h3{
+  margin-top:18px;
+
+  color:#0f172a;
+
+  font-size:1.3rem;
+}
+
+.notice-card p{
+  margin-top:15px;
+
+  color:#64748b;
+
+  line-height:1.8;
+}
+
+.notice-card button{
+  margin-top:20px;
+
+  border:none;
+
+  padding:12px 18px;
+
+  border-radius:12px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2563eb,
+    #4f46e5
+  );
+
+  color:white;
+
+  cursor:pointer;
+
+  font-weight:600;
+}
+
+.notice-card button:hover{
+  opacity:.95;
+}
+
+@media(max-width:768px){
+
+  .notices-page{
+    padding:120px 6% 60px;
+  }
+
+  .notices-header h1{
+    font-size:2.2rem;
+  }
+
+}
+.notice-btn{
+  display:inline-block;
+
+  margin-top:20px;
+
+  padding:12px 20px;
+
+  border-radius:12px;
+
+  text-decoration:none;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2563eb,
+    #4f46e5
+  );
+
+  color:white;
+
+  font-weight:600;
+
+  transition:.3s;
+}
+
+.notice-btn:hover{
+  transform:translateY(-2px);
+
+  box-shadow:
+    0 10px 20px rgba(37,99,235,.25);
+}
